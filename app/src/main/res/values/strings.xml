@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Teacher Portal Activity</string>
+    <string name="English">English</string>
+    <string name="Maths">Maths</string>
+    <string name="Science">Science</string>
+    <string name="Social_studies">Social Studies</string>
+    <string name="time">40 min</string>
+    <string name="learners">Report</string>
+    <string name="action_settings">Settings</string>
+    <string name="Teacher_aids_l1">Main Coursebook, blackboard, flashcards, chart with Sight Words, Skill Sheets, flashcards with groups of words, number cards, sentence strips</string>
+    <string name="Teacher_aids_p1">Main Coursebook, blackboard, flashcards with pictures of cartoon characters/ opposite words.</string>
+    <string name="action_logout">Logout</string>
+    <string name="digital_asset">Animation Animated Activities Chapter Summary Concept Map Dictionary eBook Listening task Picture Fun Pronunciation Quiz Slideshow Spell Wise Test Generator</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_class_change">Switch Class</string>
+
+    <string name="text_with_bullet">\u2022 integrate the conceptual knowledge gained in English, Maths and Social Studies with Science to solve the given situational problem.</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="done">Done</string>
+    <string name="ok">OK</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="cancel">Cancel</string>
+    <string name="re_try">Retry</string>
+    <string name="i_m_sure">I\'M Sure</string>
+    <string name="exit_app">Exit App</string>
+    <string name="sure_for_exit">Are you sure you want to quit the application?</string>
+    <string name="error_internet">Please check your internet connection or try again later!</string>
+    <string name="error_timeOut">Your network is too slow please try again later</string>
+    <string name="error_NoConnectionError">Please check your internet connection.</string>
+    <string name="error_AuthFailureError">No auth code found</string>
+    <string name="error_ServerError">Internet connection is very slow so server is not responding please try again later</string>
+    <string name="error_parse_data">Please try again later.</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Noto_Serif">serif</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name</string>
+    <string name="school">School</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="_class">Class</string>
+    <string name="section">Section</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="underscore">_</string>
+    <string name="name_alert">"Name can't be blank"</string>
+    <string name="donthave">"Don't have an Account ?"</string>
+
+    <string name="school_alert">"School can't be blank"</string>
+    <string name="class_alert">"Class can't be blank"</string>
+    <string name="section_alert">"Section can't be blank"</string>
+    <string name="city_alert">"City can't be blank"</string>
+    <string name="state_alert">"State can't be blank"</string>
+    <string name="mobile_alert">"Mobile number not valid"</string>
+    <string name="email_alert">Email address not valid</string>
+    <string name="specifystate">Please specify state here</string>
+    <string name="specifycity">Please specify city here</string>
+    <string name="select_name_first">Please enter your name first</string>
+    <string name="select_email_first">Please enter email address first</string>
+    <string name="select_mobile_first">Please enter mobile number first</string>
+    <string name="select_state_first">Please select state first</string>
+    <string name="select_city_first">Please select city first</string>
+    <string name="select_school_first">Please select school first</string>
+    <string name="select_class_first">Please select class first</string>
+    <string name="no_record_found">No record found.</string>
+    <string name="select">Select&#160;</string>
+    <string name="search">Search&#160;</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="go_to_setting">Go To Setting</string>
+    <string name="permission_denied">Without this permissions the app is unable to move another screen.Are you sure you want to deny this permission?"</string>
+    <string name="under_develop">This module will be delivered soon!</string>
+    <string name="button_Click_here_for_answer">Click here for the correct answers.</string>
+    <string name="on_exercise_completion">Exercise Completed</string>
+    <string name="exercise">EXERCISE</string>
+
+
+    <string name="check_update_link">https://play.google.com/store/apps/details?id=com.ratnasagar.quizapp</string>
+    <string name="title_message">Message</string>
+    <string name="update_message">There is a newer version of this app available</string>
+    <string name="update">Update</string>
+    <string name="market_link">market://details?id=com.example.teacherportal</string>
+
+    <string name="voucher">Voucher verify</string>
+    <string name="in_app">In App Purchase</string>
+
+    //Day's short keyword
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+    <string name="thursday">T</string>
+    <string name="friday">F</string>
+    <string name="saturday">S</string>
+    <string name="sunday">S</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="rank1">1<sup>st</sup></string>
+    <string name="rank2">2<sup>nd</sup></string>
+    <string name="rank3">3<sup>rd</sup></string>
+    <string name="share_app">Share App</string>
+    <string name="share_app_link"><![CDATA[Please find TeacherPortal Android App on Google Play Store.\n<![CDATA[\"https://play.google.com/store/apps/details?id=com.example.Teacherportal\"]]]]></string>
+    <string name="profile">Profile</string>
+    <string name="action_about_us">About Us</string>
+    <string name="action_OnlinePlatform">Online Learning \n platform</string>
+    <string name="help">Online Multiple \n Activities</string>
+    <string name="Report">Reports</string>
+    <string name="action_pp">Privacy Policy</string>
+    <string name="action_credits">Credits</string>
+    <string name="roll_no">Roll No</string>
+    <string name="got_it">GOT IT</string>
+
+</resources>

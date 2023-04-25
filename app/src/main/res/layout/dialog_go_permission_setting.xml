@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/medium"
+        android:layout_marginTop="@dimen/medium"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/alert_outline" />
+
+    <com.example.teacherportalactivity.CustomView.CustomText
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/xxlarge"
+        android:layout_marginTop="@dimen/medium"
+        android:gravity="center"
+        android:text="@string/permission_denied"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_normal"
+        android:textStyle="normal"
+        foo:CustomFont="AppFont.ttf" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_text"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textSize="@dimen/font_normal"
+            android:layout_margin="@dimen/micro"
+            android:layout_weight="1"
+            android:background="@drawable/app_red_button"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDialogGoSetting"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textSize="@dimen/font_normal"
+            android:layout_margin="@dimen/micro"
+            android:layout_weight="1"
+            android:background="@drawable/app_red_button"
+            android:text="@string/go_to_setting"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

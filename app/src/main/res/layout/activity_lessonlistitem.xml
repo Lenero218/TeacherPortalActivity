@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lessonslinearlyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/rounded_button"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/tvchapternumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_weight="3"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/twcenmtstdmedium"
+        android:gravity="left"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="chapter number"
+        android:textColor="@color/textcolour"
+        android:textSize="@dimen/_22sdp" />
+
+    <TextView
+        android:id="@+id/tvchaptername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvchapternumber"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_weight="2"
+        android:fontFamily="@font/twcenmtdregular"
+        android:gravity="left"
+        android:text="chapter name"
+        android:textColor="#959698"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="normal" />
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:progress="52"
+        android:progressTint="@color/btncolor"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/percent_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12sdp"
+        android:layout_margin="@dimen/_2sdp"
+        android:textStyle="bold" />
+</LinearLayout>

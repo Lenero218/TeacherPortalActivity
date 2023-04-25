@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/medium"
+        android:layout_marginTop="@dimen/medium"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/alert_outline" />
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/xxlarge"
+        android:layout_marginTop="@dimen/medium"
+        android:gravity="center"
+        android:text="@string/permission_denied"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_normal"
+        foo:CustomFont="AppFont.ttf"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/dialog_text"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDialogOK"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textSize="@dimen/font_normal"
+            android:layout_margin="@dimen/micro"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/app_red_button"
+            android:text="@string/re_try" />
+
+        <Button
+            android:id="@+id/btnDialogQuit"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textSize="@dimen/font_normal"
+            android:layout_margin="@dimen/micro"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/app_red_button"
+            android:text="@string/i_m_sure" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

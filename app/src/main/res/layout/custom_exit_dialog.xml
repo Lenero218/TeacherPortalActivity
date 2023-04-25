@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/small">
+
+    <ImageView
+        android:id="@+id/mImageViewAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/alert" />
+
+    <TextView
+        android:id="@+id/mTextViewNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mImageViewAlert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/medium"
+        android:gravity="center_horizontal"
+        android:text="@string/sure_for_exit"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_medium" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mTextViewNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/xxlarge"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mImageViewRateUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/medium"
+                android:src="@drawable/rate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mImageViewRateUs"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/medium"
+                android:layout_marginRight="@dimen/medium"
+                android:text="Rate Us"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_xsmall" />
+
+            <ImageView
+                android:id="@+id/mImageViewShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/xxlarge"
+                android:layout_toRightOf="@+id/mImageViewRateUs"
+                android:src="@drawable/share" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mImageViewShare"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/medium"
+                android:layout_marginTop="@dimen/medium"
+                android:layout_toRightOf="@+id/mImageViewRateUs"
+                android:text="Share App"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_xsmall" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mImageViewYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/medium"
+                android:visibility="gone"
+                android:src="@drawable/yes" />
+
+            <TextView
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="Yes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:text="No"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+            <ImageView
+                android:id="@+id/mImageViewNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/medium"
+                android:visibility="gone"
+                android:src="@drawable/no" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

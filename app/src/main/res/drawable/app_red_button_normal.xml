@@ -1,0 +1,45 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/app_red_button_presed"/>
+    <item
+        android:right="@dimen/layer_padding"
+        android:top="@dimen/layer_padding">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/grey"/>
+
+            <stroke android:width="@dimen/micro"
+                android:color="@color/transparent_white"
+                />
+
+            <padding android:left="@dimen/xmicro"
+                android:top="@dimen/xmicro"
+                android:right="@dimen/xmicro"
+                android:bottom="@dimen/xmicro"
+                />
+
+            <corners android:bottomRightRadius="@dimen/medium" android:bottomLeftRadius="@dimen/medium"
+                android:topLeftRadius="@dimen/medium" android:topRightRadius="@dimen/medium"/>
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/layer_padding"
+        android:left="@dimen/layer_padding">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/colorPrimary"/>
+
+            <stroke android:width="@dimen/micro"
+                android:color="@color/colorPrimary"
+                />
+
+            <padding android:left="@dimen/xmicro"
+                android:top="@dimen/xmicro"
+                android:right="@dimen/xmicro"
+                android:bottom="@dimen/xmicro"
+                />
+
+            <corners android:bottomRightRadius="@dimen/medium" android:bottomLeftRadius="@dimen/medium"
+                android:topLeftRadius="@dimen/medium" android:topRightRadius="@dimen/medium"/>
+        </shape>
+    </item>
+
+</layer-list>

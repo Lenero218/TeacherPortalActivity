@@ -1,0 +1,45 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/app_button_presed"/>
+    <item
+        android:right="3dp"
+        android:top="3dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/transparent_white"/>
+
+            <stroke android:width="4dp"
+                android:color="@color/transparent_white"
+                />
+
+            <padding android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp"
+                />
+
+            <corners android:bottomRightRadius="12dp" android:bottomLeftRadius="12dp"
+                android:topLeftRadius="12dp" android:topRightRadius="12dp"/>
+        </shape>
+    </item>
+    <item
+        android:bottom="3dp"
+        android:left="3dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/btncolor"/>
+
+            <stroke android:width="4dp"
+                android:color="@color/btncolor"
+                />
+
+            <padding android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp"
+                />
+
+            <corners android:bottomRightRadius="12dp" android:bottomLeftRadius="12dp"
+                android:topLeftRadius="12dp" android:topRightRadius="12dp"/>
+        </shape>
+    </item>
+
+</layer-list>

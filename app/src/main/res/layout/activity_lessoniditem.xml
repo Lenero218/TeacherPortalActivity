@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lessonsidlinearlyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/round_shape"
+    android:padding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:id="@+id/englyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/round_shape"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_2sdp">
+
+        <TextView
+            android:id="@+id/tvlessonids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/twcenbold"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:text="chapter number"
+            android:textColor="@color/textcolour"
+            android:textSize="@dimen/_20sdp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvlessonplandesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:fontFamily="@font/warungkopi"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:layout_below="@+id/englyt"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/textstar_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvlessonplandesc"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textstarryknight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="4.5"
+                android:fontFamily="@font/warungkopi"
+                android:hint="Write Text Here "
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/grey_500"
+                android:numStars="1"
+                android:stepSize="1"
+                android:visibility="gone" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textstar_1"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_white_dialog"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Save"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:backgroundTint="@null" />
+
+        <ProgressBar
+            android:id="@+id/simpleProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@drawable/custom_progress"
+            android:visibility="gone" />
+
+
+</RelativeLayout>

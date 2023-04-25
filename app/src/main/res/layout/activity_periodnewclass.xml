@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lessonslinearlyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/rounded_button"
+    android:padding="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/tvperiodidds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/twcenmtstdmedium"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="Period Number"
+            android:textColor="@color/textcolour"
+            android:textSize="@dimen/_20sdp"  />
+
+
+
+
+
+</RelativeLayout>

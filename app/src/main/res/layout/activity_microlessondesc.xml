@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_bar" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rounded_white_dialog"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/warungkopibold"
+                    android:gravity="left"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Number of Teaching Periods"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <TextView
+                    android:id="@+id/desc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_obj"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/twcenmtstd"
+                    android:lineSpacingExtra="@dimen/_1sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="learning Description"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l2"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rounded_white_dialog"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/warungkopibold"
+                    android:gravity="left"
+                    android:text="Teaching Aids"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <TextView
+                    android:id="@+id/desc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_obj"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/twcenmtstd"
+                    android:lineSpacingExtra="@dimen/_1sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="learning Description"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l3"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rounded_white_dialog"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/warungkopibold"
+                    android:gravity="left"
+                    android:text="Digital Assets"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <TextView
+                    android:id="@+id/desc4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_obj"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/twcenmtstd"
+                    android:lineSpacingExtra="@dimen/_1sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="learning Description"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l4"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rounded_white_dialog"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/warungkopibold"
+                    android:gravity="left"
+                    android:text="I affirm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <TextView
+                    android:id="@+id/desc5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_obj"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/twcenmtstd"
+                    android:lineSpacingExtra="@dimen/_1sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="I affirm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/nextbutton_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/app_button"
+        android:fontFamily="@font/twcenmtstdmedium"
+        android:text="Next"
+        android:textAllCaps="false"
+
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_25sdp"
+        app:backgroundTint="@null" />
+</RelativeLayout>

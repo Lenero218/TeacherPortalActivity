@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recycler_top">150dp</dimen>
+    <dimen name="button_height_normal_2">55dp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mSemTerm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/rounded_button"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvSemTermname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/twcenmtstdmedium"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="@dimen/_20sdp"
+        android:singleLine="true"
+        android:text="Semester/ Term Name "
+        android:textColor="@color/textcolour"
+        android:textSize="@dimen/_22sdp" />
+
+
+</LinearLayout>
+
+
+
+
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background_exercise"
+    android:gravity="center"
+    android:layout_margin="@dimen/_25sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="8"
+            android:text="Welcome"
+            android:textStyle="bold"
+            android:fontFamily="@font/twcenbold"
+            android:padding="@dimen/large"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="@dimen/medium"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="8"
+            android:padding="@dimen/large"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <View
+            android:id="@+id/view_upper"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="@dimen/medium"
+            android:background="@color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_top"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_ok_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_top"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnDialogOK"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottom_line"
+            android:layout_gravity="center"
+            android:background="@color/transparent_white"
+            android:padding="@dimen/normal"
+            android:text="@string/ok"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_xsmall"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnDialogSeeMore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottom_line"
+            android:layout_gravity="center"
+            android:background="@color/transparent_white"
+            android:padding="@dimen/normal"
+            android:text="@string/button_Click_here_for_answer"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomText">
+        <attr name="CustomFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomLoadingButton">
+        <attr name="btnColor" format="reference|color" />
+        <attr name="text" format="reference|string" />
+        <attr name="textColor" format="reference|string" />
+        <attr name="resetAfterFailed" format="boolean" />
+        <attr name="btnRippleColor" format="reference|color" />
+        <attr name="btnRippleAlpha" format="float" />
+        <attr name="btnText" format="reference|string" />
+    </declare-styleable>
+    <declare-styleable name="LuckyWheel">
+
+        <attr name="background_color" format="color" />
+        <attr name="arrow_image" format="reference" />
+
+    </declare-styleable>
+
+</resources>

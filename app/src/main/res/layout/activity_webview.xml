@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fed434"
+   >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/app_bar"
+            android:id="@+id/toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+<!--    <TextView-->
+<!--        android:id="@+id/loading"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Loading Please Wait"-->
+<!--        android:textColor="@color/black"-->
+<!--android:layout_below="@+id/appBar"-->
+<!--        android:background=""-->
+<!--        android:textSize="@dimen/_20sdp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        />-->
+    <!-- unique ID of WebView -->
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:layout_below="@+id/appBar" />
+
+</RelativeLayout>

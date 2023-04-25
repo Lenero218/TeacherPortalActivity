@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/twcenbold"
+        android:gravity="center"
+        android:text="Registration"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/layoutMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutBottom"
+        android:layout_below="@+id/tvAppName"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:fillViewport="true"
+            android:fitsSystemWindows="false"
+            android:focusableInTouchMode="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@color/black_transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/button_height_medium"
+                        android:layout_height="@dimen/button_height_medium"
+                        android:background="@color/black_transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mImageName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            android:src="@drawable/user"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/NameWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/normal"
+                        android:layout_marginRight="@dimen/normal"
+                        android:textColorHint="@color/white_greyish"
+                        app:hintTextAppearance="@style/TextAppearence.TextInputLayout.White">
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/email"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/mobile"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/grey" />
+
+                <LinearLayout
+                    android:id="@+id/layoutState"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@color/black_transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/button_height_medium"
+                        android:layout_height="@dimen/button_height_medium"
+                        android:background="@color/black_transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mImageState"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/state" />
+
+                        <com.example.teacherportalactivity.CustomView.CustomLoadingButton
+                            android:id="@+id/mStateLoadingButton"
+                            android:layout_width="@dimen/button_height_small"
+                            android:layout_height="@dimen/button_height_small"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/twcenmtdregular"
+                            app:btnColor="@color/white"
+                            app:btnRippleColor="@color/white"
+                            app:btnText=""
+                            app:resetAfterFailed="true"
+                            app:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/StateWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/normal"
+                        android:layout_marginRight="@dimen/normal"
+                        android:textColorHint="@color/white_greyish"
+                        app:hintTextAppearance="@style/TextAppearence.TextInputLayout.White">
+
+                        <!--<EditText
+                            android:id="@+id/etState"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/xsmall"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/down"
+                          android:fontFamily="@font/twcenmtdregular"
+                            android:gravity="center|left|bottom"
+                            android:hint="@string/state"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white_greyish" />-->
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etState"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:drawableRight="@drawable/up_and_down"
+                    android:editable="false"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/state"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/textcolour" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@color/black_transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/button_height_medium"
+                        android:layout_height="@dimen/button_height_medium"
+                        android:background="@color/black_transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mImageCity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/city" />
+
+                        <com.example.teacherportalactivity.CustomView.CustomLoadingButton
+                            android:id="@+id/mCityLoadingButton"
+                            android:layout_width="@dimen/button_height_small"
+                            android:layout_height="@dimen/button_height_small"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/twcenmtdregular"
+                            android:visibility="gone"
+                            app:btnColor="@color/white"
+                            app:btnRippleColor="@color/white"
+                            app:btnText=""
+                            app:resetAfterFailed="true"
+                            app:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/CityWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/normal"
+                        android:layout_marginRight="@dimen/normal"
+                        android:textColorHint="@color/white_greyish"
+                        app:hintTextAppearance="@style/TextAppearence.TextInputLayout.White">
+
+                        <!-- <EditText
+                             android:id="@+id/etCity"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_margin="@dimen/xsmall"
+                             android:background="@android:color/transparent"
+                             android:drawableRight="@drawable/down"
+                           android:fontFamily="@font/twcenmtdregular"
+                             android:gravity="center|left|bottom"
+                             android:hint="@string/city"
+                             android:imeOptions="actionNext"
+                             android:inputType="textCapSentences"
+                             android:textColor="@color/white"
+                             android:textColorHint="@color/white_greyish" />-->
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:drawableRight="@drawable/up_and_down"
+                    android:editable="false"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/city"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/textcolour" />
+
+                <LinearLayout
+                    android:id="@+id/layoutSchool"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@color/black_transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/button_height_medium"
+                        android:layout_height="@dimen/button_height_medium"
+                        android:background="@color/black_transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mImageSchool"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/school" />
+
+                        <com.example.teacherportalactivity.CustomView.CustomLoadingButton
+                            android:id="@+id/mSchoolLoadingButton"
+                            android:layout_width="@dimen/button_height_small"
+                            android:layout_height="@dimen/button_height_small"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/twcenmtdregular"
+                            android:visibility="gone"
+                            app:btnColor="@color/white"
+                            app:btnRippleColor="@color/white"
+                            app:btnText=""
+                            app:resetAfterFailed="true"
+                            app:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/SchoolWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/normal"
+                        android:layout_marginRight="@dimen/normal"
+                        android:textColorHint="@color/white_greyish"
+                        app:hintTextAppearance="@style/TextAppearence.TextInputLayout.White">
+
+                        <!--<EditText
+                            android:id="@+id/etSchool"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/xsmall"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/down"
+                          android:fontFamily="@font/twcenmtdregular"
+                            android:gravity="center|left|bottom"
+                            android:hint="@string/school"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white_greyish" />-->
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etSchool"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:drawableRight="@drawable/up_and_down"
+                    android:editable="false"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/school"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/textcolour"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/etSchoolName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/school"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="500"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/grey"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/layoutclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@color/black_transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/button_height_medium"
+                        android:layout_height="@dimen/button_height_medium"
+                        android:background="@color/black_transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mImageClass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/class_room" />
+
+                        <com.example.teacherportalactivity.CustomView.CustomLoadingButton
+                            android:id="@+id/mClassLoadingButton"
+                            android:layout_width="@dimen/button_height_small"
+                            android:layout_height="@dimen/button_height_small"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/twcenmtdregular"
+                            android:visibility="gone"
+                            app:btnColor="@color/white"
+                            app:btnRippleColor="@color/white"
+                            app:btnText=""
+                            app:resetAfterFailed="true"
+                            app:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ClassWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/normal"
+                        android:layout_marginRight="@dimen/normal"
+                        android:textColorHint="@color/white_greyish"
+                        app:hintTextAppearance="@style/TextAppearence.TextInputLayout.White">
+
+                        <!--<EditText
+                            android:id="@+id/etClass"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/xsmall"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/down"
+                          android:fontFamily="@font/twcenmtdregular"
+                            android:gravity="center|left|bottom"
+                            android:hint="@string/_class"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white_greyish" />-->
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:drawableRight="@drawable/up_and_down"
+                    android:editable="false"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/_class"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/textcolour" />
+
+
+                <EditText
+                    android:id="@+id/etSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:drawableRight="@drawable/up_and_down"
+                    android:editable="false"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/section"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/textcolour" />
+
+                <EditText
+                    android:id="@+id/etRollNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@drawable/input_text"
+                    android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:editable="false"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center|left"
+                    android:hint="@string/roll_no"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="@dimen/small"
+                    android:textColor="@color/textcolour"
+                    android:textColorHint="@color/grey"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/layoutMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@color/black_transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/button_height_medium"
+                        android:layout_height="@dimen/button_height_medium"
+                        android:background="@color/black_transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mImageMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/cellphone" />
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/MobileWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/normal"
+                        android:layout_marginRight="@dimen/normal"
+                        android:textColorHint="@color/white_greyish"
+                        app:hintTextAppearance="@style/TextAppearence.TextInputLayout.White">
+
+                        <!--<EditText
+                            android:id="@+id/etMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/xsmall"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789"
+                          android:fontFamily="@font/twcenmtdregular"
+                            android:gravity="center|left|bottom"
+                            android:hint="@string/mobile"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white_greyish" />-->
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginLeft="@dimen/xlarge"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:layout_marginRight="@dimen/xlarge"
+                    android:layout_marginBottom="@dimen/xsmall"
+                    android:background="@color/black_transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/button_height_medium"
+                        android:layout_height="@dimen/button_height_medium"
+                        android:background="@color/black_transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mImageEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/email" />
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/EmailWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/normal"
+                        android:layout_marginRight="@dimen/normal"
+                        android:textColorHint="@color/white_greyish"
+                        app:hintTextAppearance="@style/TextAppearence.TextInputLayout.White">
+
+                        <!--<EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/xsmall"
+                            android:background="@android:color/transparent"
+                          android:fontFamily="@font/twcenmtdregular"
+                            android:gravity="center|left|bottom"
+                            android:hint="@string/email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white_greyish" />-->
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/xlarge"
+            android:layout_marginRight="@dimen/xlarge"
+            android:background="@color/transparent_white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnRegister2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/rounded_login_button"
+                android:fontFamily="@font/warungkopibold"
+                android:padding="0dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_25sdp"
+                app:backgroundTint="@null" />
+
+            <com.example.teacherportalactivity.CustomView.CustomLoadingButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/twcenmtdregular"
+                android:onClick="registerOnClick"
+                android:visibility="gone"
+                app:btnColor="@color/btncolor"
+                app:btnRippleColor="#fff"
+                app:btnText="@string/submit"
+                app:resetAfterFailed="true"
+                app:textColor="@color/white" />
+            <!-- <TextView
+                 android:layout_width="200dp"
+                 android:layout_height="40dp"
+                 android:id="@+id/tvAlreadyUser"
+                 android:gravity="center"
+                 android:background="@drawable/already_user"/>-->
+
+            <LinearLayout
+                android:id="@+id/tvAlreadyUser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center"
+                    android:text="Already a user?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xlarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/twcenmtdregular"
+                    android:gravity="center"
+                    android:text=" SIGN IN"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xlarge"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

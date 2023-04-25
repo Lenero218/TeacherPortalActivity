@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_15sdp">15dp</dimen>
+    <dimen name="normal">10dp</dimen>
+    <dimen name="outercard">70dp</dimen>
+    <dimen name="large">16dp</dimen>
+    <dimen name="xmicro">2dp</dimen>
+    <dimen name="inner_card">35dp</dimen>
+    <dimen name="edit_box_height">55dp</dimen>
+    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="_40sdp">40dp</dimen>
+    <dimen name="button_height_small">38dp</dimen>
+    <dimen name="_10sdp">10dp</dimen>
+    <dimen name="font_xsmall">14sp</dimen>
+    <dimen name="button_height_medium">60dp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="medium">12dp</dimen>
+    <dimen name="xsmall">6dp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="layer_padding">3dp</dimen>
+    <dimen name="xxlarge">24dp</dimen>
+    <dimen name="micro">4dp</dimen>
+    <dimen name="ap_logo">85dp</dimen>
+    <dimen name="word_logo">55dp</dimen>
+    <dimen name="days_layout_top">165dp</dimen>
+    <dimen name="xlarge">20dp</dimen>
+    <dimen name="days_recycler_top_buttom">85dp</dimen>
+    <dimen name="margin_top_days_text">190dp</dimen>
+    <dimen name="recyler_paddings">55dp</dimen>
+    <dimen name="xxxxlarge">40dp</dimen>
+    <dimen name="_25sdp">25dp</dimen>
+    <dimen name="_5sdp">6.50dp</dimen>
+</resources>
